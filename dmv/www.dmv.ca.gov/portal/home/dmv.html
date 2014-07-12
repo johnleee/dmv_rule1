@@ -770,10 +770,10 @@ Registration Information</a></li>
 
 <!-- This is DEFAULT banner/image to be displayed -->	
 <div style="cursor:pointer;">
-<!-- 
-<div id="slide_449" class="legacy-homesite-banner" alt="blah" onclick="slidelink_449();"></div>
- -->
-	<img id="slide_449" src="../../imageserver/dmv/images/legacy_plates/legacy_homesite_banner.jpg" alt="Default" onclick="slidelink_449();" />
+
+<div id="slide_449" class="legacy-homesite-banner" alt="figurehow2updatelater" onclick="slidelink_449();"></div>
+
+	<!-- <img id="slide_449" src="../../imageserver/dmv/images/legacy_plates/legacy_homesite_banner.jpg" alt="Default" onclick="slidelink_449();" /> -->
 </div>
 
 <script type="text/javascript">
@@ -796,42 +796,42 @@ Registration Information</a></li>
 		<!-- English -->
 		
 			ii_449 = ii_449 +1;
-			arrURL[ii_449] = "../../imageserver/dmv/images/hmpg/banner/ab60_eng.jpg";
+			arrURL[ii_449] = "ab60-eng";
 			arrHREF[ii_449] = "http://apps.dmv.ca.gov/ab60/index.html";
 			arrALT[ii_449] = "Learn more about the implementation of AB60";
 		
 			ii_449 = ii_449 +1;
-			arrURL[ii_449] = "../../imageserver/dmv/images/legacy_plates/legacy_homesite_banner.jpg";
+			arrURL[ii_449] = "legacy-homesite-banner";
 			arrHREF[ii_449] = "http://www.dmv.ca.gov/legacyplates/index.htm";
 			arrALT[ii_449] = "Legacy Plates Pre-Order";
 		
 			ii_449 = ii_449 +1;
-			arrURL[ii_449] = "../../imageserver/dmv/images/site/home/slider1.jpg";
+			arrURL[ii_449] = "slider1";
 			arrHREF[ii_449] = "http://apps.dmv.ca.gov/mobiledevices/iphone/dmvnow/default.htm";
 			arrALT[ii_449] = "DMV Android & iPhone Applications";
 		
 			ii_449 = ii_449 +1;
-			arrURL[ii_449] = "../../imageserver/dmv/images/hmpg/banner/hawdsurvey.png";
+			arrURL[ii_449] = "hawdsurvey";
 			arrHREF[ii_449] = "https://www.dmv.ca.gov/wasapp/sefp/buildForm.do?f=hawdsurvey";
 			arrALT[ii_449] = "Your opinion matters";
 		
 			ii_449 = ii_449 +1;
-			arrURL[ii_449] = "../../imageserver/dmv/images/hmpg/banner/pedestrian_safety_banner.jpg";
+			arrURL[ii_449] = "pedestrian-safety-banner";
 			arrHREF[ii_449] = "http://www.dmv.ca.gov/about/pedestrian.htm";
 			arrALT[ii_449] = "DMV encourages Pedestrian Safety";
 		
 			ii_449 = ii_449 +1;
-			arrURL[ii_449] = "../../imageserver/dmv/images/site/home/slider4.jpg";
+			arrURL[ii_449] = "slider4";
 			arrHREF[ii_449] = "http://www.facebook.com/CADMV";
 			arrALT[ii_449] = "Visit Us on Face Book";
 		
 			ii_449 = ii_449 +1;
-			arrURL[ii_449] = "../../imageserver/dmv/images/site/home/senior_ombud_en.jpg";
+			arrURL[ii_449] = "senior-ombud-en";
 			arrHREF[ii_449] = "http://www.youtube.com/watch?v=ZqMnjn6vO20&amp;feature=youtu.be";
 			arrALT[ii_449] = "Information about DMV's Senior Driver Ombudsman Program";
 		
 			ii_449 = ii_449 +1;
-			arrURL[ii_449] = "../../imageserver/dmv/images/aoi/bicycle/bicycle_banner_hmpg.jpg";
+			arrURL[ii_449] = "bicycle-banner-hmpg";
 			arrHREF[ii_449] = "http://www.dmv.ca.gov/coi/bicycle/bicycle.htm";
 			arrALT[ii_449] = "DMV encourages sharing the road";
 		
@@ -841,9 +841,11 @@ Registration Information</a></li>
 
 	function slideit_449() 
 	{
-		// function that is called by the timer - executed every timerVal miniseconds
-		document.getElementById("slide_449").src = arrURL[step_449];
+		// function that is c
+		document.getElementById("slide_449").className = arrURL[step_449];
+		//document.getElementById("slide_449").src = arrURL[step_449];
 		document.getElementById("slide_449").alt = arrALT[step_449];
+
 		strHREF_449 = arrHREF[step_449];
 		if (step_449 < numOfItems1_449) {
 			step_449++;
